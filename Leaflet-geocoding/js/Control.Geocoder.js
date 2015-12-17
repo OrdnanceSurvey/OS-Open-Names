@@ -911,10 +911,12 @@
 					if (data.results && data.results.length) {
 						for (var i = 0; i <= data.results.length - 1; i++) {
 							loc = data.results[i];
-							var coords = [loc.GAZETTEER_ENTRY.GEOMETRY_X,loc.GAZETTEER_ENTRY.GEOMETRY_Y];
-							var projectedCoords = L.latLng(proj4(epsg27700, 'WGS84', coords));
+							var projectedCoords = L.latLng(proj4(epsg27700, 'WGS84', [loc.GAZETTEER_ENTRY.GEOMETRY_X,loc.GAZETTEER_ENTRY.GEOMETRY_Y]));
+							var SWcoords = L.latLng(proj4(epsg27700, 'WGS84', [loc.GAZETTEER_ENTRY.MBR_XMIN,loc.GAZETTEER_ENTRY.MBR_YMIN]));
+							var NEcoords = L.latLng(proj4(epsg27700, 'WGS84', [loc.GAZETTEER_ENTRY.MBR_XMAX,loc.GAZETTEER_ENTRY.MBR_YMAX]));
 							latLng = L.latLng(projectedCoords.lng,projectedCoords.lat);
 							latLngBounds = L.latLngBounds(latLng, latLng);
+							
 							var gaz = loc.GAZETTEER_ENTRY.NAME1 + ', ';
 							if (loc.GAZETTEER_ENTRY.DISTRICT_BOROUGH) {
 								gaz += loc.GAZETTEER_ENTRY.DISTRICT_BOROUGH += ', ';
