@@ -15,3 +15,7 @@ We also recognise that one place may have more than one name: an official name, 
 
 Our specification will extend the Infrastructure for Spatial Information in the European Community (INSPIRE) Geographical Names theme to ensure it’s compliant with European open data initiatives.
 
+###License
+
+These demos are released under the Apache 2.0 License
+
