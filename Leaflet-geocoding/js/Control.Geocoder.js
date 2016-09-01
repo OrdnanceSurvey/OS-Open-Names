@@ -884,7 +884,7 @@
 	
 		L.Control.Geocoder.OSOpenNames = L.Class.extend({
 		options: {
-			service_url: 'https://api.ordnancesurvey.co.uk/opennames/v1/'
+			service_url: 'https://api.os.uk/opennames/v1/'
 		},
 
 		initialize: function(key) {

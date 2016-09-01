@@ -1,6 +1,6 @@
 import urllib
 
-url = 'https://api.ordnancesurvey.co.uk/opennames/v1/nearest?%s'
+url = 'https://api.os.uk/opennames/v1/nearest?%s'
 params = urllib.urlencode({'point':'437342.5,115485.5', 'key':'INSERT_YOUR_API_KEY_HERE'})
 
 try:

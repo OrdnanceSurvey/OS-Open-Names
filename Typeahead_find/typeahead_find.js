@@ -4,7 +4,7 @@ var names = new Bloodhound({
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-        url: 'https://api.ordnancesurvey.co.uk/opennames/v1/find?query=%QUERY&key=INSERT_YOUR_API_KEY_HERE',
+        url: 'https://api.os.uk/opennames/v1/find?query=%QUERY&key=INSERT_YOUR_API_KEY_HERE',
         wildcard: '%QUERY',
         filter: function(names) {
             // Map the remote source JSON array to a JavaScript object array

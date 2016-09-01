@@ -1,7 +1,7 @@
 import urllib
 import urllib2 
 print ('------------------------error 404 ------------------------------------------')
-url = 'https://api.ordnancesurvey.co.uk/opennames/v1/find?'
+url = 'https://api.os.uk/opennames/v1/find?'
 values = {'query':'''SOUTHAMPTON''',
           'key':'INSERT_YOUR_API_KEY_HERE'}
 data = urllib.urlencode(values)
@@ -33,7 +33,7 @@ else:
             f.close()
 print ('------------------------error 401 ------------------------------------------')
 
-url = 'https://api.ordnancesurvey.co.uk/opennames/v1/find?'
+url = 'https://api.os.uk/opennames/v1/find?'
 values = {'query':'''SOUTHAMPTON''',
           'key':'INSERT_YOUR_API_KEY_HERE'}
 data = urllib.urlencode(values)
@@ -64,7 +64,7 @@ else:
             f.close()
             
 print ('------------------------second try ------------------------------------------')
-url = 'https://api.ordnancesurvey.co.uk/opennames/v1/find'
+url = 'https://api.os.uk/opennames/v1/find'
 values = {'query':'''SOUTHAMPTON''',
           'key':'INSERT_YOUR_API_KEY_HERE'}
 full_url = url + '?' + data

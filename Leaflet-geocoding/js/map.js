@@ -56,5 +56,5 @@ map.on('click', function(e) {
                 }
                 marker = L.marker(r.center).bindPopup(r.html || r.name).addTo(map).openPopup();
             }
-        })
+        });
     });
