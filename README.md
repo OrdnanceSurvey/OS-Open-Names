@@ -1,6 +1,6 @@
-# OS Open Names API Demos
+# OS Names API Demos
 
-This repo contains working examples of how to use the Ordnance Survey Open Names API, a RESTful API based on the [OS Open Names](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-names.html) dataset. The API returns queries to the service in either XML or JSON, and offers two resources: '[find](https://apidocs.os.uk/docs/os-names-find)' and '[nearest](https://apidocs.os.uk/docs/os-names-nearest)'. There are JavaScript examples using [Leaflet](http://leafletjs.com/) and [typeahead.js](https://twitter.github.io/typeahead.js/), as well as an example of making calls to the API in Python 3.0. 
+This repo contains working examples of how to use the Ordnance Survey Open Names API, a RESTful API based on the [OS Open Names](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-names.html) dataset. The API returns queries to the service in either XML or JSON, and offers two resources: '[find](https://apidocs.os.uk/docs/os-names-find)' and '[nearest](https://apidocs.os.uk/docs/os-names-nearest)'. There are JQuery examples using [getJSON](http://api.jquery.com/jquery.getjson/) and examples using [typeahead.js](https://twitter.github.io/typeahead.js/). Additionally [Leaflet](http://leafletjs.com/) and Openlayers examples are provided to facilliate the Geosearch resources.
 
 Register for an API key of OS Open Names API **[here](https://developer.ordnancesurvey.co.uk/user/register)**
 
